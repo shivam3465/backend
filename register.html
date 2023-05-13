@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic login form</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+        form{
+            background-color: rgb(25, 61, 153);
+            color: white;
+            width: 40%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1.2rem;
+        }
+        input{
+            margin: 0.5rem 0rem;
+            width: 70%;
+            font-size: 1.2rem;
+        }
+        a{
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Register</h2>
+        <form action="/register" method="post">
+            <input type="text" placeholder="enter name" name="name">
+            <input type="email" placeholder="enter email" name="email">
+            <input type="password" name="password" placeholder="enter password">
+            <p>Already have an account , <a href="/login">Login</a></p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
